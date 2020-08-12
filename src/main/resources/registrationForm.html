@@ -13,8 +13,13 @@
         <h1>Rejestracja</h1>
         Imię<br/><input type="text" class="inputBorder" required="required" minlength="3" maxlength="15" placeholder="Wpisz imię"><br/>
         Nazwisko<br/> <input type="text" class="inputBorder" required="required" minlength="2" maxlength="25" placeholder="Wpisz nazwisko"><br/>
-        <span class="gender">Płeć </span><input type="radio" name="gender"> Kobieta<br/>
+        <div class="genderContent">
+            <div class="genderTitle">Płeć </div>
+            <div class="genderValues">
+            <input type="radio" name="gender"> Kobieta<br/>
             <input type="radio" name="gender"> Mężczyzna<br/>
+            </div>
+        </div>
         Adres email<br/><input type="email" class="inputBorder" required="required" minlength="5" maxlength="30" placeholder="Wpisz adres email"><br/>
         Hasło <br/><input type="password" class="inputBorder" required="required" minlength="8" maxlength="15" placeholder="Hasło"><br/>
         <p class="fontHint">Min. 8 znaków</p><br/>

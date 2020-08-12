@@ -13,9 +13,20 @@
     border-radius: 4px;
 }
 
-.gender{
-    width: 20%;
-    alignment: left;
+.genderContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.genderTitle{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.genderValues{
+    display: flex;
+    flex-direction: column;
 }
 
 .form{
@@ -27,4 +38,3 @@
     border-width: thin;
     border-radius: 4px;
 }
-

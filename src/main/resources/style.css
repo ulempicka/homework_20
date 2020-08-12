@@ -1,0 +1,30 @@
+.fontHint{
+    color: gray;
+    font-size: smaller;
+}
+
+.fontBlue{
+    color: dodgerblue;
+}
+
+.btnBlue{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 4px;
+}
+
+.gender{
+    width: 20%;
+    alignment: left;
+}
+
+.form{
+    margin: auto;
+}
+
+.inputBorder{
+    border-color: lightgrey;
+    border-width: thin;
+    border-radius: 4px;
+}
+

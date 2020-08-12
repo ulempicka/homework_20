@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="shortcut icon" href="form.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <form method="post" action="URL">
+        <h1>Rejestracja</h1>
+        Imię <input type="text" name="firstName" required="required" minlength="3" maxlength="15" placeholder="Wpisz imię"><br/>
+        Nazwisko <input type="text" name="lastName" required="required" minlength="2" maxlength="25" placeholder="Wpisz nazwisko"><br/>
+        <div>Płeć <input type="radio" name="gender"> Kobieta<br/>
+            <input type="radio" name="gender"> Mężczyzna</div><br/>
+        Adres email <input type="email" name="email" required="required" minlength="5" maxlength="30" placeholder="Wpisz adres email"><br/>
+        Hasło <input type="password" name="password" required="required" minlength="8" maxlength="15" placeholder="Hasło"><br/>
+        <small>Min. 8 znaków</small><br/>
+        <div>
+
+        <label for="city">Miasto</label>
+        <label for="province">Województwo</label>
+        <label for="zipcode">Kod pocztowy</label><br/>
+        <input type="text" id="city" minlength="3" maxlength="20">
+        <select id="province">
+            <option selected="selected" disabled="disabled">Wybierz...</option>
+            <option>Wrocław</option>
+            <option>Warszawa</option>
+            <option>Katowice</option>
+        </select>
+        <input type="text" id="zipcode" length="5"><br/>
+
+        </div>
+
+
+        <input type="submit" value="Rejestruj">
+    </form>
+</body>
+</html>

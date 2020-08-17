@@ -16,8 +16,8 @@
         <div class="genderContent">
             <div class="genderTitle">Płeć </div>
             <div class="genderValues">
-            <input type="radio" name="gender"> Kobieta<br/>
-            <input type="radio" name="gender"> Mężczyzna<br/>
+            <input type="radio" name="gender">Kobieta<br/>
+            <input type="radio" name="gender">Mężczyzna<br/>
             </div>
         </div>
         Adres email<br/><input type="email" class="inputBorder" required="required" minlength="5" maxlength="30" placeholder="Wpisz adres email"><br/>
@@ -54,7 +54,7 @@
             </div>
             <div class="col">
                 <label for="zipcode">Kod pocztowy</label><br/>
-                <input type="text" id="zipcode" class="inputBorder" length="5"><br/>
+                <input type="text" id="zipcode" class="inputBorder" length="6" pattern="\d{2}-\d{3}"><br/>
             </div>
         </div>
         </div>

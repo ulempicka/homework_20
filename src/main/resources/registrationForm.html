@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="shortcut icon" href="form.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+<div class="row">
+    <form method="post" action="URL" class="form">
+        <h1>Rejestracja</h1>
+        Imię<br/><input type="text" class="inputBorder" required="required" minlength="3" maxlength="15" placeholder="Wpisz imię"><br/>
+        Nazwisko<br/> <input type="text" class="inputBorder" required="required" minlength="2" maxlength="25" placeholder="Wpisz nazwisko"><br/>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm">Płeć</div>
+                <div class="col-lg">
+                    <input type="radio" name="gender"> Kobieta<br/>
+                    <input type="radio" name="gender"> Mężczyzna<br/>
+                </div>
+            </div>
+        </div>
+        Adres email<br/><input type="email" class="inputBorder" required="required" minlength="5" maxlength="30" placeholder="Wpisz adres email"><br/>
+        Hasło <br/><input type="password" class="inputBorder" required="required" minlength="8" maxlength="15" placeholder="Hasło"><br/>
+        <p class="fontHint">Min. 8 znaków</p><br/>
+
+        <div class="form-group">
+        <div class="row">
+            <div class="col-md">
+                <label for="city">Miasto</label><br/>
+                <input type="text" id="city" class="inputBorder" minlength="3" maxlength="20"><br/>
+            </div>
+            <div class="col-sm">
+                <label for="province">Województwo</label><br/>
+                <select id="province" class="inputBorder">
+                    <option selected="selected" disabled="disabled">Wybierz...</option>
+                    <option>dolnośląskie</option>
+                    <option>kujawsko-pomorskie</option>
+                    <option>lubelskie</option>
+                    <option>lubuskie</option>
+                    <option>łódzkie</option>
+                    <option>małopolskie</option>
+                    <option>mazowieckie</option>
+                    <option>opolskie</option>
+                    <option>podkarpackie</option>
+                    <option>podlaskie</option>
+                    <option>pomorskie</option>
+                    <option>śląskie</option>
+                    <option>świętokrzyskie</option>
+                    <option>warmińsko-mazurskie</option>
+                    <option>wielkopolskie</option>
+                    <option>zachodniopomorskie</option>
+                </select><br/>
+            </div>
+            <div class="col-sm">
+                <label for="zipcode">Kod pocztowy</label><br/>
+                <input type="text" id="zipcode" class="inputBorder" length="6" pattern="\d{2}-\d{3}"><br/>
+            </div>
+        </div>
+        </div>
+
+        <input type="checkbox"> Akceptuję <span class="fontBlue">regulamin</span><br/>
+        <input type="checkbox" checked> Wyrażam zgodę na otrzymywanie informacji marketingowych<br/>
+        <input type="submit" value="Rejestruj" class="btnBlue">
+    </form>
+</div>
+</body>
+</html>

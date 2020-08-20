@@ -1,0 +1,40 @@
+.fontHint{
+    color: gray;
+    font-size: smaller;
+}
+
+.fontBlue{
+    color: dodgerblue;
+}
+
+.btnBlue{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 4px;
+}
+
+.genderContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.genderTitle{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.genderValues{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    margin: auto;
+}
+
+.inputBorder{
+    border-color: lightgrey;
+    border-width: thin;
+    border-radius: 4px;
+}

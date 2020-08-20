@@ -13,24 +13,26 @@
         <h1>Rejestracja</h1>
         Imię<br/><input type="text" class="inputBorder" required="required" minlength="3" maxlength="15" placeholder="Wpisz imię"><br/>
         Nazwisko<br/> <input type="text" class="inputBorder" required="required" minlength="2" maxlength="25" placeholder="Wpisz nazwisko"><br/>
-        <div class="genderContent">
-            <div class="genderTitle">Płeć </div>
-            <div class="genderValues">
-            <input type="radio" name="gender">Kobieta<br/>
-            <input type="radio" name="gender">Mężczyzna<br/>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm">Płeć</div>
+                <div class="col-lg">
+                    <input type="radio" name="gender"> Kobieta<br/>
+                    <input type="radio" name="gender"> Mężczyzna<br/>
+                </div>
             </div>
         </div>
         Adres email<br/><input type="email" class="inputBorder" required="required" minlength="5" maxlength="30" placeholder="Wpisz adres email"><br/>
         Hasło <br/><input type="password" class="inputBorder" required="required" minlength="8" maxlength="15" placeholder="Hasło"><br/>
         <p class="fontHint">Min. 8 znaków</p><br/>
 
-        <div class="container">
+        <div class="form-group">
         <div class="row">
-            <div class="col">
+            <div class="col-md">
                 <label for="city">Miasto</label><br/>
                 <input type="text" id="city" class="inputBorder" minlength="3" maxlength="20"><br/>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <label for="province">Województwo</label><br/>
                 <select id="province" class="inputBorder">
                     <option selected="selected" disabled="disabled">Wybierz...</option>
@@ -52,7 +54,7 @@
                     <option>zachodniopomorskie</option>
                 </select><br/>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <label for="zipcode">Kod pocztowy</label><br/>
                 <input type="text" id="zipcode" class="inputBorder" length="6" pattern="\d{2}-\d{3}"><br/>
             </div>
